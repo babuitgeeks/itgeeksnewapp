@@ -1,0 +1,488 @@
+@font-face {
+
+    font-family: 'Jost';
+
+    src: url('../font/Jost-Light.woff2') format('woff2'),
+
+        url('../font/Jost-Light.woff') format('woff');
+
+    font-weight: normal;
+
+    font-style: normal;
+
+    font-display: swap;
+
+}
+
+*{
+
+	margin:0;
+
+	padding:0;
+
+}
+
+body{
+
+    font-size: 16px;
+
+    color: #777;
+
+    line-height: 1.8em;
+
+    -webkit-font-smoothing: antialiased;
+
+    max-width: 100%;
+
+    overflow-x: hidden;
+
+    background-color: #F0F5F8;
+
+    font-family: 'Jost';
+
+    font-weight: normal;
+
+    font-style: normal;
+
+}
+
+
+
+img {
+
+    max-width: 100%;
+
+}
+
+a {
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    color: inherit;
+
+    -webkit-transition: all 0.40s ease-in-out;
+
+    -moz-transition: all 0.40s ease-in-out;
+
+    -o-transition: all 0.40s ease-in-out;
+
+    -ms-transition: all 0.40s ease-in-out;
+
+    transition: all 0.40s ease-in-out;
+
+}
+
+a:hover,
+
+a:focus,
+
+a:visited {
+
+    text-decoration: none;
+
+    outline: none;
+
+    -webkit-transition: all 0.40s ease-in-out;
+
+    -moz-transition: all 0.40s ease-in-out;
+
+    -o-transition: all 0.40s ease-in-out;
+
+    -ms-transition: all 0.40s ease-in-out;
+
+    transition: all 0.40s ease-in-out;
+
+}
+
+a:hover {
+
+    color: #1a59a2;
+
+}
+
+p,
+
+em {
+
+    font-size: 16px;
+
+    line-height: 1.6em;
+
+    color: inherit;
+
+}
+
+h1,
+
+h2,
+
+h3,
+
+h4,
+
+h5,
+
+h6 {
+
+    position: relative;
+
+    margin: 0px;
+
+    background: none;
+
+    line-height: 1.6em;
+
+    color: #000;
+
+}
+
+
+
+input[type=text],
+
+input[type=email],
+
+input[type=search],
+
+input[type=password],
+
+input[type=number],
+
+select {
+
+    padding: 0 20px;
+
+    border: 0;
+
+    display: inline-block;
+
+    width: 100%;
+
+    border: 1px solid rgba(0, 0, 0, 0.12);
+
+    outline: none;
+
+    height: 40px;
+
+	box-sizing:border-box;
+
+    font-size: 14px;
+
+    font-family: 'Jost';
+
+}
+
+input[type=text]:focus,
+
+input[type=email]:focus,
+
+input[type=search]:focus,
+
+input[type=password]:focus,
+
+input[type=number]:focus{
+
+   border-color: #003777;	
+
+}
+
+.btn {
+
+    padding: 10px 20px;
+
+    border: 2px solid #eee;
+
+    background-color: #f7f5f5;
+
+    font-size: 16px;
+
+    line-height: 1.2em;
+
+    font-family: 'Roboto Condensed';
+
+    cursor: pointer;
+
+	outline:none;
+
+	-webkit-transition: all 0.40s ease-in-out;
+
+    -moz-transition: all 0.40s ease-in-out;
+
+    -o-transition: all 0.40s ease-in-out;
+
+    -ms-transition: all 0.40s ease-in-out;
+
+    transition: all 0.40s ease-in-out;
+
+    font-family: 'Jost';
+
+}
+
+.btn:hover{
+
+	border-color: #003777;
+
+}
+
+.btn:disabled {
+
+    cursor: no-drop;
+
+}
+
+.btn:disabled:hover{
+
+	border-color: #eee;
+
+}
+
+textarea {
+
+    padding: 0 20px;
+
+    border: 0;
+
+    display: inline-block;
+
+    width: 100%;
+
+    border: 1px solid rgba(0, 0, 0, 0.12);
+
+    outline: none;
+
+    font-size: 13px;
+
+}
+
+.itg-login-detail {
+
+    width: 100%;
+
+    position: relative;
+
+}
+
+.itg-login-detail .container {
+
+    width: 100%;
+
+    max-width: 800px;
+
+    padding: 0 15px;
+
+    margin: auto;
+
+}
+
+.itg-login-form {
+
+    max-width: 500px;
+
+    margin: 100px auto;
+
+    box-shadow: 0px 0px 40px rgb(0 0 0 / 10%);
+
+    background-color: #fff;
+
+    padding: 30px;
+
+    box-sizing: border-box;
+
+}
+
+.itg-login-form .itg-login-group {
+
+    width: 100%;
+
+    position: relative;
+
+    margin-bottom: 30px;
+
+}
+
+.itg-login-form .title {
+
+    font-size: 24px;
+
+    letter-spacing: 1px;
+
+    text-align: center;
+
+    margin-bottom: 30px;
+
+    color: #003777;
+
+}
+
+.itg-login-group .login-error {
+
+    font-size: 14px;
+
+    color: red;
+
+}
+
+.itg-enable-sync {
+
+    width: 100%;
+
+    position: relative;
+
+}
+
+.itg-admin-header {
+
+    position: relative;
+
+    width: 100%;
+
+    padding: 10px 30px;
+
+    background-color: #fff;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    align-items: center;
+
+}
+
+.itg-admin-header .title {
+
+    margin-right: 15px;
+
+}
+
+.enable-disable-button #itg-enable-disable {
+
+    opacity: 0;
+
+    visibility: hidden;
+
+}
+
+.enable-disable-button {
+
+    line-height: 1em;
+
+    position: relative;
+
+}
+
+.enable-disable-button #itg-enable-disable+label {
+
+    width: 40px;
+
+    height: 20px;
+
+    display: inline-block;
+
+    border-radius: 15px;
+
+    background-color: #ababab;
+
+    position: absolute;
+
+    top: 50%;
+
+    transform: translate(0%,-50%);
+
+    left: 0;
+
+	-webkit-transition: all .45s ease-in-out;
+
+    -moz-transition: all .45s ease-in-out;
+
+    -o-transition: all .45s ease-in-out;
+
+    -ms-transition: all .45s ease-in-out;
+
+    transition: all .45s ease-in-out;
+
+    cursor:pointer;
+
+}
+
+.enable-disable-button #itg-enable-disable+label:before {
+
+    content: "";
+
+    width: 15px;
+
+    height: 15px;
+
+    position: absolute;
+
+    background-color: #fff;
+
+    border-radius: 100%;
+
+    top: 2.5px;
+
+    left: 4px;
+
+	-webkit-transition: all .45s ease-in-out;
+
+    -moz-transition: all .45s ease-in-out;
+
+    -o-transition: all .45s ease-in-out;
+
+    -ms-transition: all .45s ease-in-out;
+
+    transition: all .45s ease-in-out;
+
+}
+
+.enable-disable-button #itg-enable-disable:checked+label:before{
+
+	left: 6px;
+
+    transform: translate(100%,0%);
+
+}
+
+.enable-disable-button #itg-enable-disable:checked+label {
+
+    background-color: #27bbed;
+
+}
+
+.itg-loader {
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    right: 0;
+
+    bottom: 0;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background-color: rgba(255,255,255,0.6);
+
+    opacity:0;
+
+    visibility:hidden;
+
+}
+
+.itg-app-body.loading .itg-loader {
+
+    opacity: 1;
+
+    visibility: visible;
+
+}
+#check-products{
+	margin:20px;
+}
